@@ -5,7 +5,7 @@
                           Les raccourcis
 
                           
-Les constantes représentes des raccourcis permettant d'accéder
+Les constantes représentent des raccourcis permettant d'accéder
 plus rapidement aux dossiers et fichiers souhaités                          
 -----------------------------------------------------*/
 

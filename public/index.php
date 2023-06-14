@@ -23,4 +23,6 @@
 //  Amorçage de l'application 
 require __DIR__ . "/../config/environment.php"
 
+// 
+
 ?>
