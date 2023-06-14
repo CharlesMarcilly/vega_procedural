@@ -10,7 +10,6 @@
  * Ses rôles : 
  * 
  * - Amorcer l'application (Charger les fichiers de configuration)
- * - Charger le noyau
  * - Executer le noyau
  * - Récupérer la réponse du noyau
  * - Retourner cette réponse au serveur
@@ -19,10 +18,22 @@
  * -------------------------------------------------------------------
  *  */
 
- 
-//  Amorçage de l'application 
-require __DIR__ . "/../config/environment.php"
 
-// 
+//  Amorçage de l'application 
+require __DIR__ . "/../config/bootstrap.php";
+
+// Chargement du noyau de l'application
+require SRC . "/kernel.php";
+
+// Si le client essaye de récupérer la réponse du noyau via autre chose que le terminal
+if(php_sapi_name() !== "cli")
+{
+    // Soumission de la requête et récupération de la réponse du noyau
+    $response = handleRequest();
+
+    // Affichage de cette réponse au client
+    echo $response;
+}
+
 
 ?>

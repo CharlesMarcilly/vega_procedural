@@ -18,4 +18,18 @@ define("ROOT", dirname(__DIR__));
 */
 const CONFIG = ROOT . "/config";
 
+/**
+ * Cette constante représente le raccourci permettant d'accéder au dossier "src"
+*/
+const SRC = ROOT . "/src";
+
+/**
+ * Cette constante représente le raccourci permettant d'accéder au coeur de "Vega"
+*/
+const VEGA_CORE = ROOT . "/vegaCore";
+/**
+ * 
+ * Cette constante représente le raccourci permettant d'accéder au dossier des contrôleurs
+*/
+const CONTROLLER = ROOT . "/src/controller";
 ?>

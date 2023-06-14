@@ -1,6 +1,6 @@
 <?php
 
-file_exists(ROOT . "/env.local.conf") ? ROOT . "/env.local.conf" : ROOT . "/env.conf";
+$env_file = file_exists(ROOT . "/env.local.conf") ? ROOT . "/env.local.conf" : ROOT . "/env.conf";
 
 $_ENV = parse_ini_file($env_file);
 
