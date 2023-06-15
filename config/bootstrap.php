@@ -27,6 +27,6 @@ require CONFIG . "/system.php";
 require CONFIG . "/session.php";
 
 // Chargement du monolog
-// require CONFIG ."/monolog.php";
+require CONFIG ."/monolog.php";
 
 ?>
